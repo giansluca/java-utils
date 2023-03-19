@@ -1,6 +1,11 @@
 package org.gmdev;
 
 import org.gmdev.concurrency.*;
+import org.gmdev.event.eventsourcing.ServiceManager;
+import org.gmdev.event.fileservice.FileServiceManager;
+import org.gmdev.event.messageservice.MessageServiceManager;
+import org.gmdev.event.producerconsumer.ClassicProducerConsumer;
+import org.gmdev.event.producerconsumer.ProducerConsumerWithBlockingQueue;
 import org.gmdev.functional.callback._Callback;
 import org.gmdev.functional.callback._Lambdas;
 import org.gmdev.functional.combinatorpattern._Combinator;
@@ -10,6 +15,8 @@ import org.gmdev.functional.functionalinterface._Predicate;
 import org.gmdev.functional.functionalinterface._Supplier;
 import org.gmdev.functional.optionals._Optional;
 import org.gmdev.functional.streams._Stream;
+import org.gmdev.security.AESEncryption;
+import org.gmdev.security.SimpleEncryption;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
@@ -19,7 +26,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Ready");
 
-        // FUNCTIONAL
+        // ---- FUNCTIONAL ----
+
 //        _Stream.driver();
 //        _Function.driver();
 //        _Consumer.driver();
@@ -30,7 +38,8 @@ public class Main {
 //        _Callback.driver();
 //        _Lambdas.driver();
 
-        // CUNCURRENCY
+        // ---- CONCURRENCY ----
+
         // Simple Threads
 //        RunClass.threadExample();
 //        RunClass.runnableExample();
@@ -74,6 +83,32 @@ public class Main {
 //        CompletableFutureExample_2.thenCombineCompletableFuture();
 //        CompletableFutureExample_2.exceptionCompletableFuture();
 
+        // ---- EVENTS ----
+
+        // Event source
+//        FileServiceManager eventSourceManager = new FileServiceManager();
+//        eventSourceManager.startService();
+        // Producer Consumer
+//        ClassicProducerConsumer classicProducerConsumer = new ClassicProducerConsumer();
+//        classicProducerConsumer.start();
+//        ProducerConsumerWithBlockingQueue producerConsumerBlockingQueue = new ProducerConsumerWithBlockingQueue();
+//        producerConsumerBlockingQueue.startNormalThread();
+//        producerConsumerBlockingQueue.startServiceExecutor();
+        // Message service
+//        MessageServiceManager messageService = new MessageServiceManager();
+//        messageService.start();
+        // File service
+//        FileServiceManager eventsProducer = new FileServiceManager();
+//        eventsProducer.start();
+
+        // ---- ENCRYPTION ----
+
+        // Simple encryption
+//        SimpleEncryption.test();
+        // Encrypt - Decrypt 128 bit AES
+//        String encPassword = AESEncryption.encodeBase64AES("1234567");
+//        System.out.println(encPassword);
+//        System.out.println(AESEncryption.decodeBase64AES(encPassword));
 
     }
 
