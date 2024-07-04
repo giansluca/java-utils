@@ -15,9 +15,6 @@ import org.gmdev.functional.functionalinterface._Predicate;
 import org.gmdev.functional.functionalinterface._Supplier;
 import org.gmdev.functional.optionals._Optional;
 import org.gmdev.functional.streams._Stream;
-import org.gmdev.genetic.Algorithm;
-import org.gmdev.genetic.FitnessCalc;
-import org.gmdev.genetic.Population;
 import org.gmdev.security.AESEncryption;
 import org.gmdev.security.SimpleEncryption;
 
@@ -112,28 +109,6 @@ public class Main {
 //        String encPassword = AESEncryption.encodeBase64AES("1234567");
 //        System.out.println(encPassword);
 //        System.out.println(AESEncryption.decodeBase64AES(encPassword));
-
-        // ---- GENETIC ----
-
-//        // Set a candidate solution
-//        FitnessCalc.setSolution("1111000000000000000000000000000000000000000000000000000000001111");
-//
-//        // Create an initial population
-//        Population myPop = new Population(50, true);
-//
-//        // Evolve our population until we reach an optimum solution
-//        int generationCount = 0;
-//        while (myPop.getFittest().getFitness() < FitnessCalc.getMaxFitness()) {
-//            generationCount++;
-//            System.out.println("Generation: " + generationCount + " Fittest: " + myPop.getFittest().getFitness() + " Max Fitness: " + FitnessCalc.getMaxFitness());
-//            myPop = Algorithm.evolvePopulation(myPop);
-//        }
-//        System.out.println("Solution found!");
-//        System.out.println("Generation: " + generationCount);
-//        System.out.println("Genes:");
-//        System.out.println(myPop.getFittest());
-
-
     }
 
 }
