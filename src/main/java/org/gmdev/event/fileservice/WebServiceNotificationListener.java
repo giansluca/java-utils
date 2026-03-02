@@ -2,13 +2,13 @@ package org.gmdev.event.fileservice;
 
 import java.io.File;
 
-public class WebSeviceNotificationListener implements EventListener{
+public class WebServiceNotificationListener implements EventListener{
 	
 	private final String url;
 	private final String name;
 	private final String subscriberType;
 	
-	public WebSeviceNotificationListener(String url, String name) {
+	public WebServiceNotificationListener(String url, String name) {
 		this.url = url;
 		this.name = name;
 		this.subscriberType = Const.WEBSERVICE_NOTIFICATION_LISTENER;

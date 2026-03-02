@@ -111,8 +111,8 @@ public class FileServiceManager {
 		EmailNotificationListener mail_sub_b = new EmailNotificationListener("sub_b@example.com", "Brian");
 		EmailNotificationListener mail_sub_c = new EmailNotificationListener("sub_c@example.com", "Tom");
 		
-		WebSeviceNotificationListener web_sub_a = new WebSeviceNotificationListener("www-11111", "New York");
-		WebSeviceNotificationListener web_sub_b = new WebSeviceNotificationListener("www-22222", "Berlin");
+		WebServiceNotificationListener web_sub_a = new WebServiceNotificationListener("www-11111", "New York");
+		WebServiceNotificationListener web_sub_b = new WebServiceNotificationListener("www-22222", "Berlin");
 		
 		LogListener log_sub = new LogListener("/Users/gians/Desktop/file.txt", "MainLog");
 		

@@ -26,8 +26,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Ready");
 
-        // ---- FUNCTIONAL ----
-
+//        // ---- FUNCTIONAL ----
+//
 //        _Stream.driver();
 //        _Function.driver();
 //        _Consumer.driver();
@@ -37,10 +37,10 @@ public class Main {
 //        _Combinator.driver();
 //        _Callback.driver();
 //        _Lambdas.driver();
-
-        // ---- CONCURRENCY ----
-
-        // Simple Threads
+//
+//        // ---- CONCURRENCY ----
+//
+//        // Simple Threads
 //        RunClass.threadExample();
 //        RunClass.runnableExample();
 //        RunClass.runnableExampleAnonymous();
@@ -48,18 +48,18 @@ public class Main {
 //        RunClass.RunnableExampleLambdaExpression();
 //        RunClass.threadSleepExample();
 //        RunClass.threadJoinExample();
-        // Executor and Thread pool
+//        // Executor and Thread pool
 //        ExecutorClass.executorsExampleSingle();
 //        ExecutorClass.executorsExampleMulti();
 //        ExecutorClass.scheduledExecutorsExample();
 //        ExecutorClass.ScheduledExecutorsPeriodicExample();
-        // Callable and Future
+//        // Callable and Future
 //        CallableFutureClass.futureAndCallableExample();
 //        CallableFutureClass.futureIsDoneExample();
 //        CallableFutureClass.futureCancelExample();
 //        CallableFutureClass.invokeAllExample();
 //        CallableFutureClass.invokeAnyExample();
-        // Synchronization
+//        // Synchronization
 //        Synchronization.raceConditionExample();
 //        Synchronization.memoryConsistencyErrorExample();
 //        Synchronization.synchronizedMethodExample();
@@ -68,7 +68,7 @@ public class Main {
 //        Synchronization.reentrantLockMethodsCounter();
 //        Synchronization.reentrantReadWriteLock();
 //        Synchronization.atomicIntegerExample();
-        // Completable Future
+//        // Completable Future
 //        CompletableFutureExample_1.simpleCompletableFuture();
 //        CompletableFutureExample_1.simpleCompletableFutureLambda();
 //        CompletableFutureExample_1.returnCompletableFuture();
@@ -82,33 +82,34 @@ public class Main {
 //        CompletableFutureExample_2.thenComposeCompletableFuture();
 //        CompletableFutureExample_2.thenCombineCompletableFuture();
 //        CompletableFutureExample_2.exceptionCompletableFuture();
-
-        // ---- EVENTS ----
-
-        // Event source
+//
+//        // ---- EVENTS ----
+//
+//        // Event source
 //        FileServiceManager eventSourceManager = new FileServiceManager();
-//        eventSourceManager.startService();
-        // Producer Consumer
+//        eventSourceManager.start();
+//        // Producer Consumer
 //        ClassicProducerConsumer classicProducerConsumer = new ClassicProducerConsumer();
 //        classicProducerConsumer.start();
 //        ProducerConsumerWithBlockingQueue producerConsumerBlockingQueue = new ProducerConsumerWithBlockingQueue();
 //        producerConsumerBlockingQueue.startNormalThread();
 //        producerConsumerBlockingQueue.startServiceExecutor();
-        // Message service
+//        // Message service
 //        MessageServiceManager messageService = new MessageServiceManager();
 //        messageService.start();
-        // File service
+//        // File service
 //        FileServiceManager eventsProducer = new FileServiceManager();
 //        eventsProducer.start();
-
-        // ---- ENCRYPTION ----
-
-        // Simple encryption
+//
+//        // ---- ENCRYPTION ----
+//
+//        // Simple encryption
 //        SimpleEncryption.test();
-        // Encrypt - Decrypt 128 bit AES
+//        // Encrypt - Decrypt 128 bit AES
 //        String encPassword = AESEncryption.encodeBase64AES("1234567");
 //        System.out.println(encPassword);
 //        System.out.println(AESEncryption.decodeBase64AES(encPassword));
+
     }
 
 }
